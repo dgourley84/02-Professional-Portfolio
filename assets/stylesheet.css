@@ -1,3 +1,7 @@
+*{
+    font-family: 'Cabin', Sans-serif;
+}
+
 :root {
     --dark: #2d3142;
     --light: #ffffff;
@@ -6,9 +10,22 @@
     --bright-offset: #ef8354;
     }
 
-.title-box img {
-    opacity: .75;
-}
+nav {
+        text-align: right;
+    }
+    
+header p{
+        text-align: right;
+    }
+
+.header-container{
+    background-image: url(https://www.freepik.com/photos/3d-studio);
+    min-height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}   
 
 .title-box {
     width: 33%;
@@ -18,7 +35,6 @@
     flex-direction: row;
     border-right: 10px solid var(--medium-dark);
     padding: 0%;
-    height: inherit;
 }
 
 .detail {
@@ -28,46 +44,26 @@
     flex-wrap: wrap;
     flex-direction: row;
     padding: 0%;
-    height: inherit;
 }
 
-.container-aboutme{
+.container-aboutme, .container-work-links, .container-contacts{
     height: max-content;
     float: left;
     margin: 5px;
     width: 100%;
 }
 
-.container-work-links {
-    height: max-content;
-    float: left;
-    margin: 5px;
-    width: 100%;
-}
-
-.main-work{
+.main-work, .secondary-work {
     width: 66%;
     display: inline;
     float: right;
 }
 
-.secondary-work{
-    width: 66%;
-    display: inline;
-    float: right; 
-}
-
-.container-contacts{
-    height: max-content;
-    margin: 5px;
-    float: left;
-    width: 100%;
-}
-
 .contacts-listing{
-    width: 66%;
-    display: inline;
-    float: right; 
+    width: 66%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 .primary-work img {
@@ -77,3 +73,145 @@
 .secondary-work img {
     max-width: 33%;
 }
+
+.main-menu{
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 5px;
+}
+
+.main-menu ul {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+.main-menu li {
+    list-style-type: none;
+    font-size: 2rem;
+  }
+  
+.main-menu a {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+.main-menu a:hover {
+    background-color: var(--medium-light);
+    color: var(--dark);
+  }
+
+.contacts-listing a:hover {
+    background-color: var(--medium-light);
+    color: var(--dark);
+  }
+
+#hamburger-input{
+    display: none;
+  }
+  
+#hamburger-menu {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      display: none;
+      border: none;
+      padding: 0px;
+      margin: 0px;
+      background: linear-gradient(
+        to bottom, 
+        #2d3142, #2d3142 20%, 
+        white 20%, white 40%, 
+        #2d3142 40%, #2d3142 60%, 
+        white 60%, white 80%, 
+        #2d3142 80%, #2d3142 100%
+      );
+  }
+  
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: var(--dark);
+    transition: 0.5s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+  }
+  
+#hamburger-menu h3 {
+    color: var(--medium-light);
+    font-size: 2.2rem;
+  }
+  
+#hamburger-menu ul {
+    padding-right: 0px;
+  }
+  
+#hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+  }
+  
+#hamburger-menu a {
+    color: var(--medium-light);
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  
+#hamburger-menu a:hover {
+    text-decoration: underline;
+  }
+  
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+      visibility: visible;
+      left: 0;
+  }
+#hamburger-input:checked ~ .overlay{
+    visibility: visible;
+    opacity: 0.4;
+  }
+
+@media screen and (max-width:992px) {
+    .main-menu {
+        display: none;
+        }
+      #hamburger-menu {
+        display: inline;
+        }
+      .title-box {
+        width: 100%;
+        border-bottom: 10px solid var(--medium-dark);
+        border-left: 0px;
+        justify-content: center;
+        }
+      
+      .main-work {
+        width: 100%;
+        display: inline;
+        }
+        .secondary-work{
+        width: 100%;
+        display: inline;
+        }
+    .detail {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0%;
+        height: 100%;
+        }
+    .secondary-work a {
+        width: 50%;
+        justify-content: space-between;
+    }
+    }
