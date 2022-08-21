@@ -5,3 +5,75 @@
     --medium-dark: #4f5d75;
     --bright-offset: #ef8354;
     }
+
+.title-box img {
+    opacity: .75;
+}
+
+.title-box {
+    width: 33%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-right: 10px solid var(--medium-dark);
+    padding: 0%;
+    height: inherit;
+}
+
+.detail {
+    width: 66%;
+    float: right;
+    display: inline;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0%;
+    height: inherit;
+}
+
+.container-aboutme{
+    height: max-content;
+    float: left;
+    margin: 5px;
+    width: 100%;
+}
+
+.container-work-links {
+    height: max-content;
+    float: left;
+    margin: 5px;
+    width: 100%;
+}
+
+.main-work{
+    width: 66%;
+    display: inline;
+    float: right;
+}
+
+.secondary-work{
+    width: 66%;
+    display: inline;
+    float: right; 
+}
+
+.container-contacts{
+    height: max-content;
+    margin: 5px;
+    float: left;
+    width: 100%;
+}
+
+.contacts-listing{
+    width: 66%;
+    display: inline;
+    float: right; 
+}
+
+.primary-work img {
+    max-width: 66%;
+}
+
+.secondary-work img {
+    max-width: 33%;
+}
