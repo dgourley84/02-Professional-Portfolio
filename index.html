@@ -15,61 +15,65 @@
     
     <!-- Nav bar of the page - quicklinks to sections of the page -->
     <nav>
-        <ul>
-            <li>About me</li>
-            <li>Work</li>
-            <li>Contact me</li>
-        </ul>
+        <a href="#aboutme">About me</a>
+        <a href="#worklinks">Work</a>
+        <a href="#contacts">Contact</a>
     </nav>
 
     <main>
         <!-- section of page for About me -->
-        <aside>
-            <div class="title-box">
-                <h2 class="title-header">About me</h2>
-            </div>
-        </aside>
-        <section>
-            <p> Accountant with 13 years’ experience working in both team environments and as an individual.
+        <Div class="container-aboutme" id="aboutme">
+            <aside>
+                <div class="title-box">
+                    <h2 class="title-header">About me</h2>
+                    <img src="./assets/images/ProfilePic.jpg" alt="Profile Picture">
+                </div>
+            </aside>
+            <section>
+                <div class="detail">
+                    <p> Accountant with 13 years’ experience working in both team environments and as an individual.
                 I have provided work on several projects dealing in a variety of industries including hospitality, property development,
                 management rights and agriculture. I am a proven team player with a tremendous work ethic and the ability to adapt to new environments
                 and challenges quickly and gain successful results for all stakeholders. 
                 I have in an interest in programing that is built on the foundation of loving to solve problems and learn new things. I have experience
                 in data modelling and data manipulation and wish to add programing string to my bow in order to assist in obtain data through API's and webhooks,
                 maniuplating data and defining relationships and then present meaningful reports built on a hierarchical dataset.
-            </p>
-        </section>
+                    </p>
+                </div>
+            </section>
+        </Div>
+        
         <!-- section of page for links to work -->
-        <aside>
-            <div class="title-box">
-                <h2 class="title-header">Work</h2>
-            </div>
-        </aside>
-        <section>
-            <div class="main-work">
-                <a href="">deployed class activity week 2</a>
-            </div>
-            <div class="secondary-work">
-                <ul>
-                    <li>first week project</li>
-                    <li>deployed class actvitiy week 1</li>
-                </ul>
-            </div>
-        </section>
+        <div class="container-work-links" id="worklinks">
+            <aside>
+                <div class="title-box">
+                    <h2 class="title-header">Work</h2>
+                </div>
+            </aside>
+            <section>
+                <div class="main-work">
+                    <a href="">deployed class activity week 2</a>
+                </div>
+                <div class="secondary-work">
+                    <a href="https://dgourley84.github.io/01-HTML-CSS-GIT-Project/"><img src="./assets/images/firstweek-refactor-assignement.png" alt="First week refactor code firstweek-refactor-assignement"></a>
+                    <a href="">deployed class activity week 1</a>
+                </div>
+            </section>
+        </div>
        
         <!-- section of page for contact links-->
-        <aside>
-            <div class="title-box">
-                <h2 class="title-header">Contact Me</h2>
-            </div>
-        </aside>
-        <section>
-            <ul>
-                <li>Email</li>
-                <li>Github</li>
-                <li>Linkedin</li>
-            </ul>
-        </section>
+        <div class="container-contacts" id="contacts">
+            <aside>
+             <div class="title-box">
+                    <h2 class="title-header">Contact Me</h2>
+                </div>
+            </aside>
+            <section class="contacts-listing">
+                <a href="https://github.com/dgourley84" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/dallas-gourley-Brisbane4018" target="_blank">Linkedin</a>
+                <a href="mailto:dallas.gourley@yahoo.com">Send email</a>
+            </section>
+        </div>
     </main>
 
     <footer>
