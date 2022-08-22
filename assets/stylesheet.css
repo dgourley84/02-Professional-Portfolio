@@ -9,17 +9,14 @@
     --medium-dark: #4f5d75;
     --bright-offset: #ef8354;
     }
-
-nav {
-        text-align: right;
-    }
-    
+   
 header p{
         text-align: right;
     }
 
 .header-container{
-    background-image: url(https://www.freepik.com/photos/3d-studio);
+    background-color: var(--dark);
+    color: var(--light);
     min-height: 100px;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,13 +32,17 @@ header p{
     padding: 0%;
 }
 
+.title-header{
+  text-align: right;
+}
+
 .detail {
     width: 66%;
     float: right;
     display: inline;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 0%;
+    padding-left: 5px;
     align-items: stretch;
     border-left: 10px solid var(--medium-dark);
 }
@@ -53,11 +54,21 @@ header p{
     width: 100%;
 }
 
-.main-work, .secondary-work {
+.primary-work, .secondary-work {
     width: 66%;
-    display: inline;
+    display: inline-flex;
     float: right;
     border-left: 10px solid var(--medium-dark);
+    overflow: hidden;
+    padding-left: 5px;
+}
+
+.container-contacts{
+  background-color: var(--dark);
+}
+
+.container-contacts .title-box{
+  color: var(--medium-light);
 }
 
 .contacts-listing{
@@ -66,33 +77,42 @@ header p{
     float: right;
     justify-content: space-around;
     align-items: center;
-    border-left: 10px solid var(--medium-dark);
+    border-left: 10px solid var(--medium-light);
     height: 50px;
+    padding-left: 5px;
+}
+
+.contacts-listing a {
+  text-decoration: none;
+  color: var(--medium-light);
 }
 
 .primary-work img {
-    max-width: 66%;
+    border-radius: 5px;
+    object-fit:cover;
+    justify-content: center;
 }
 
 .secondary-work img {
-    max-width: 33%;
+  border-radius: 5px;
+  width: 100%;
+  object-fit: contain;
+  justify-content: center;   
 }
 
 .main-menu{
     display: block;
     height: 50px;
     width: 100%;
-    margin: 5px;
 }
 
 .main-menu ul {
-    max-width: 800px;
     width: 100%;
     height: 100%;
-    margin: 0px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: var(--medium-light);
   }
   
 .main-menu li {
@@ -103,17 +123,29 @@ header p{
 .main-menu a {
     font-size: 1.5rem;
     text-decoration: none;
+    color: var(--medium-dark);
   }
   
 .main-menu a:hover {
     background-color: var(--medium-light);
     color: var(--dark);
+    border-radius: 2px;
   }
 
 .contacts-listing a:hover {
-    background-color: var(--medium-light);
+    background-color: var(--light);
     color: var(--dark);
+    border-radius: 2px;
+    padding: 5px;
+    border: var(--dark) solid 2px;
   }
+
+.primary-work img:hover,
+.secondary-work img:hover{
+  opacity: .5; 
+  transform: scale(1.2);
+  transition: 0.5s;
+}
 
 #hamburger-input{
     display: none;
@@ -198,7 +230,7 @@ header p{
         justify-content: center;
         }
       
-    .main-work, .secondary-work {
+    .primary-work, .secondary-work {
         width: 100%;
         display: inline;
         }
@@ -215,7 +247,7 @@ header p{
         justify-content: space-between;
     }
 
-    .contacts-listing, .main-work, .secondary-work, .detail {
+    .contacts-listing, .primary-work, .secondary-work, .detail {
       border-left: 0px;
     }
     .contacts-listing{
@@ -223,4 +255,7 @@ header p{
       display: flex;
       float: none;
       }
+    header p{
+        text-align: left;
+    }
     }
