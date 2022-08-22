@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dallas Gourley|Professional Portfolio</title>
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/stylesheet.css">
 </head>
 <body>
     <!--header of page -->
     <header class="header-container">
         <h1 class="page-title">Dallas Gourley</h1>
-        <p>-Professional Portfolio</p>
+        <p id="page-top">-Professional Portfolio</p>
     </header>
 
     <!--Nav menu-->
@@ -26,7 +27,7 @@
     <input type="checkbox" id="hamburger-input" class="burger-shower" />
         <label id="hamburger-menu" for="hamburger-input">
             <nav id="sidebar-menu">
-                <h3>Menu</h3>
+                <h3><a href="#page-top">Menu</a></h3>
                     <ul>
                         <li><a href="#aboutme">About me</a></li>
                         <li><a href="#worklinks">Work</a></li>
@@ -40,7 +41,7 @@
         <Div class="container-aboutme" id="aboutme">
             <aside>
                 <div class="title-box">
-                    <h3 class="title-header">About me</h2>
+                    <h2 class="title-header">About me</h2>
                     </div>
             </aside>
             <section>
@@ -61,16 +62,16 @@
         <div class="container-work-links" id="worklinks">
             <aside>
                 <div class="title-box">
-                    <h3 class="title-header">Work</h2>
+                    <h2 class="title-header">Work</h2>
                 </div>
             </aside>
             <section>
-                <div class="main-work">
-                    <a href="">deployed class activity week 2</a>
+                <div class="primary-work">
+                    <a href="" target="_blank"><img src="./assets/images/Secondweek-inclass-activity.png" alt="Second week in class activity"></a>
                 </div>
                 <div class="secondary-work">
-                    <a href="https://dgourley84.github.io/01-HTML-CSS-GIT-Project/"><img src="./assets/images/firstweek-refactor-assignement.png" alt="First week refactor code firstweek-refactor-assignement"></a>
-                    <a href="">deployed class activity week 1</a>
+                    <a href="https://dgourley84.github.io/01-HTML-CSS-GIT-Project/" target="_blank"><img src="./assets/images/firstweek-refactor-assignement.png" alt="First week refactor code firstweek-refactor-assignement"></a>
+                    <a href="" target="_blank"><img src="./assets/images/firstweek-inclass-activity.png" alt="Fist week inclass activity"></a>
                 </div>
             </section>
         </div>
@@ -79,7 +80,7 @@
         <div class="container-contacts" id="contacts">
             <aside>
              <div class="title-box">
-                    <h3 class="title-header">Contact Me</h2>
+                    <h2 class="title-header">Contact Me</h2>
                 </div>
             </aside>
             <section class="contacts-listing">
