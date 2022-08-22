@@ -24,16 +24,14 @@ header p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }   
 
-.title-box {
+.title-box{
     width: 33%;
     float: left;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border-right: 10px solid var(--medium-dark);
     padding: 0%;
 }
 
@@ -44,6 +42,8 @@ header p{
     flex-wrap: wrap;
     flex-direction: row;
     padding: 0%;
+    align-items: stretch;
+    border-left: 10px solid var(--medium-dark);
 }
 
 .container-aboutme, .container-work-links, .container-contacts{
@@ -57,13 +57,17 @@ header p{
     width: 66%;
     display: inline;
     float: right;
+    border-left: 10px solid var(--medium-dark);
 }
 
 .contacts-listing{
     width: 66%; 
     display: flex;
+    float: right;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
+    border-left: 10px solid var(--medium-dark);
+    height: 50px;
 }
 
 .primary-work img {
@@ -185,24 +189,20 @@ header p{
     .main-menu {
         display: none;
         }
-      #hamburger-menu {
+    #hamburger-menu {
         display: inline;
         }
-      .title-box {
+    .title-box {
         width: 100%;
         border-bottom: 10px solid var(--medium-dark);
-        border-left: 0px;
         justify-content: center;
         }
       
-      .main-work {
+    .main-work, .secondary-work {
         width: 100%;
         display: inline;
         }
-        .secondary-work{
-        width: 100%;
-        display: inline;
-        }
+
     .detail {
         width: 100%;
         flex-wrap: wrap;
@@ -214,4 +214,13 @@ header p{
         width: 50%;
         justify-content: space-between;
     }
+
+    .contacts-listing, .main-work, .secondary-work, .detail {
+      border-left: 0px;
+    }
+    .contacts-listing{
+      width: 100%;
+      display: flex;
+      float: none;
+      }
     }
