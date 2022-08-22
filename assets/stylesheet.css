@@ -24,7 +24,7 @@ header p{
 }   
 
 .title-box{
-    width: 33%;
+    width: 30%;
     float: left;
     display: flex;
     flex-wrap: wrap;
@@ -54,14 +54,23 @@ header p{
     width: 100%;
 }
 
-.primary-work, .secondary-work {
-    width: 66%;
-    display: inline-flex;
-    float: right;
-    border-left: 10px solid var(--medium-dark);
-    overflow: hidden;
-    padding-left: 5px;
+.primary-work, .secondary-work{
+  width: 66%;
+  display: inline-flex;
+  float: right;
+  border-left: 10px solid var(--medium-dark);
+  overflow: hidden;
+  padding-left: 5px;
 }
+
+.secondary-work {
+    height: 100px;
+}
+
+.primary-work{
+  height: 150px;
+}
+
 
 .container-contacts{
   background-color: var(--dark);
@@ -88,13 +97,11 @@ header p{
 }
 
 .primary-work img {
-    border-radius: 5px;
     object-fit:cover;
     justify-content: center;
 }
 
 .secondary-work img {
-  border-radius: 5px;
   width: 100%;
   object-fit: contain;
   justify-content: center;   
@@ -232,7 +239,11 @@ header p{
       
     .primary-work, .secondary-work {
         width: 100%;
-        display: inline;
+        display: inline-block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: fit-content;
+        object-fit: contain;
         }
 
     .detail {
@@ -242,9 +253,12 @@ header p{
         padding: 0%;
         height: 100%;
         }
+
     .secondary-work a {
         width: 50%;
         justify-content: space-between;
+        display: inline;
+        flex-wrap: wrap;
     }
 
     .contacts-listing, .primary-work, .secondary-work, .detail {
