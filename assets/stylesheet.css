@@ -231,7 +231,8 @@ header p{
     #hamburger-menu {
         display: inline;
         }
-    .title-box {
+
+        .title-box {
         width: 100%;
         border-bottom: 10px solid var(--medium-dark);
         justify-content: center;
@@ -272,4 +273,11 @@ header p{
     header p{
         text-align: left;
     }
+
+    .primary-work img:hover,
+    .secondary-work img:hover{
+  opacity: 1; 
+  transform: scale(1);
+  transition: 0s;
+  z-index: index -3;
     }
