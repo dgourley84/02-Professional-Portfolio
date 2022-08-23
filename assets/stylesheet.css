@@ -68,7 +68,6 @@ text-align: right;
 }
 
 .container-contacts{
-
 background-color: var(--dark);
 position: absolute;
 bottom:36px;
@@ -295,5 +294,19 @@ color: var(--light);
     display: flex;
     float: none;
     }
+    
+    header p{
+      text-align: left;
+  }
+
+  .primary-work img {
+    height: 100px;
+  }
+
+  .secondary-work img {
+    height: 50px;
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
