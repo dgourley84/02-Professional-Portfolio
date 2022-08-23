@@ -52,11 +52,13 @@ header p{
     float: left;
     margin: 5px;
     width: 100%;
+    flex-direction: row;
 }
 
 .primary-work, .secondary-work {
     width: 66%;
-    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     float: right;
     border-left: 10px solid var(--medium-dark);
     overflow: hidden;
@@ -65,6 +67,9 @@ header p{
 
 .container-contacts{
   background-color: var(--dark);
+  position: absolute;
+  bottom:36px;
+  margin: 0px;
 }
 
 .container-contacts .title-box{
@@ -85,25 +90,33 @@ header p{
 .contacts-listing a {
   text-decoration: none;
   color: var(--medium-light);
+  position: relative;
 }
 
 .primary-work img {
     border-radius: 5px;
+    width: 100%;
+    height: 150px;
     object-fit:cover;
     justify-content: center;
 }
 
 .secondary-work img {
   border-radius: 5px;
-  width: 100%;
-  object-fit: contain;
-  justify-content: center;   
+  width: 49.5%;
+  object-fit: cover;
+  justify-content: center;  
+  height: 50px; 
+  overflow: hidden;
 }
 
 .main-menu{
     display: block;
     height: 50px;
     width: 100%;
+    position: sticky;
+    position: -webkit-sticky; /*Safari*/
+    top: 0;
 }
 
 .main-menu ul {
@@ -145,6 +158,15 @@ header p{
   opacity: .5; 
   transform: scale(1.2);
   transition: 0.5s;
+}
+
+.page-footer{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 #hamburger-input{
@@ -221,9 +243,11 @@ header p{
     .main-menu {
         display: none;
         }
+
     #hamburger-menu {
         display: inline;
         }
+
     .title-box {
         width: 100%;
         border-bottom: 10px solid var(--medium-dark);
@@ -233,6 +257,7 @@ header p{
     .primary-work, .secondary-work {
         width: 100%;
         display: inline;
+        flex-direction: column;
         }
 
     .detail {
@@ -242,20 +267,30 @@ header p{
         padding: 0%;
         height: 100%;
         }
-    .secondary-work a {
-        width: 50%;
-        justify-content: space-between;
-    }
 
     .contacts-listing, .primary-work, .secondary-work, .detail {
       border-left: 0px;
-    }
+      flex-wrap: wrap;
+      }
+
     .contacts-listing{
       width: 100%;
       display: flex;
       float: none;
       }
+
     header p{
         text-align: left;
     }
+
+    .primary-work img {
+      height: 100px;
     }
+
+    .secondary-work img {
+      height: 50px;
+      width: 100%;
+      flex-direction: column;
+    }
+
+}
