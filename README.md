@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> d2d973559f17b83dac21934b31592709bf32fded
 # Professional Portfolio
 
 A brief description of your project, what it is used for and how does life get
@@ -47,4 +51,8 @@ links to humans using your project. You can include links like:
 
 ## Licensing
 
+<<<<<<< HEAD
 "The code in this project is licensed under MIT license."
+=======
+"The code in this project is licensed under MIT license."
+>>>>>>> d2d973559f17b83dac21934b31592709bf32fded
