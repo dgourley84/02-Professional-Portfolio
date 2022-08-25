@@ -27,6 +27,11 @@ img {
   background-size: cover;
 }   
 
+.profile-pic{
+  border-radius: 5px;
+  margin: 10px;
+}
+
 .title-box{
   width: 33%;
   float: left;
@@ -161,9 +166,8 @@ img {
   border: var(--dark) solid 2px;
 }
 
-.primary-work img:hover,
-.secondary-work img:hover{
-  opacity: .5; 
+img:hover {
+  opacity: 1; 
   transform: scale(1.2);
   transition: 0.5s;
   filter: none;
